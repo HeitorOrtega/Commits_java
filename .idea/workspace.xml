@@ -1,15 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0f2045-990c-4f93-9155-aa35136da891" name="Changes" comment="" />
+    <list default="true" id="fa0f2045-990c-4f93-9155-aa35136da891" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/controller/LivroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/entity/Categoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/entity/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/repository/LivroRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/java/br/com/fiap/spring/mvc/service/LivroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/resources/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/resources/templates/fragments/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/resources/templates/livroCadastro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/main/resources/templates/livroLista.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.mvc/src/test/java/br/com/fiap/spring/mvc/ApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring.mvc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HeitorOrtega&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HeitorOrtega/Commits_java.git&quot;,
+    &quot;accountId&quot;: &quot;ce7bb2d3-8546-4f5a-82f9-3a2dc1ef89a8&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -18,18 +82,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/heito/OneDrive/Área de Trabalho/Commits_java/spring.mvc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gant&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="SpringMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-mvc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.spring_mvc.SpringMvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fa0f2045-990c-4f93-9155-aa35136da891" name="Changes" comment="" />
@@ -37,7 +129,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755304041206</updated>
+      <workItem from="1756859630588" duration="27000" />
+      <workItem from="1756859660258" duration="11000" />
+      <workItem from="1756859678768" duration="47000" />
+      <workItem from="1756859735554" duration="190000" />
+      <workItem from="1756859937414" duration="2000" />
+      <workItem from="1756859945534" duration="983000" />
+      <workItem from="1756861181824" duration="2206000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
