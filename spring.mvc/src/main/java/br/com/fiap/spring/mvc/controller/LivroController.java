@@ -5,7 +5,7 @@ import br.com.fiap.spring.mvc.entity.Livro;
 import br.com.fiap.spring.mvc.service.LivroService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,11 +19,12 @@ import java.util.List;
 @Controller
 @RequestMapping("/livros")
 public class LivroController {
+
     @Autowired
     LivroService livroService;
+
     @GetMapping("/lista")
     public String listarLivros(Model model) {
-
         List<Livro> livros = livroService.readLivros();
         model.addAttribute("listaLivros", livros);
 
@@ -33,12 +34,12 @@ public class LivroController {
     @GetMapping("/cadastro")
     public String cadastroLivro(Model model){
         model.addAttribute("livro", new Livro());
-        model.addAttribute("categoriaLista", Arrays.asList(Categoria.values()));
         return "livroCadastro";
     }
+
     @PostMapping("/cadastrar")
-    public String cadastrarLivro(@Valid Livro livro, BindingResult result , Model model){
-        if (result.hasErrors()) {
+    public String cadastrarLivro(@Valid Livro livro, BindingResult result, Model model){
+        if(result.hasErrors()){
             model.addAttribute("livro", livro);
             model.addAttribute("categoriaLista", Arrays.asList(Categoria.values()));
             return "livroCadastro";
