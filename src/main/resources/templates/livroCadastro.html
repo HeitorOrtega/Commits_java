@@ -12,7 +12,7 @@
 <div class="main_content">
   <form method="post" th:action="@{/livros/cadastrar}" th:object="${livro}">
     <h2>Cadastro de Livro</h2>
-      <input type="hidden" th:field="*{id}">
+    <input type="hidden" th:field="id"/>
     <div>
       <label for="titulo">Titulo:</label><input type="text" id="titulo" th:field="*{titulo}">
       <p th:if="${#fields.hasErrors('titulo')}" th:errors="*{titulo}" th:errorclass="error"></p>

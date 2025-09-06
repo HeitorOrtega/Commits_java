@@ -2,7 +2,7 @@ package br.com.fiap.spring_mvc.service;
 
 import br.com.fiap.spring_mvc.entity.Livro;
 import br.com.fiap.spring_mvc.repository.LivroRepository;
-import org.apache.tomcat.jni.Library;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,17 +22,16 @@ public class LivroService {
     public Livro readLivro(Livro livro){
         return livroRepository.findById(livro.getId()).orElse(null);
     }
-
     public List<Livro> readLivros(){
         return livroRepository.findAll();
 
     }
 
-    public Livro updateLivro(Livro livro){
-        return livroRepository.save(livro);
-    }
-
     public void deleteLivro(Livro livro){
         livroRepository.delete(livro);
+    }
+
+    public void updateLivro(@Valid Livro livro) {
+
     }
 }

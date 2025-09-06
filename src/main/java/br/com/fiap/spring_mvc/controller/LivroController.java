@@ -28,44 +28,43 @@ public class LivroController {
         return "livroLista";
     }
 
-@GetMapping("/cadastro")
-public String cadastroLivro(Model model){
-    model.addAttribute("livro", new Livro());
-    return "livroCadastro";
-}
-
-@PostMapping("/cadastrar")
-public String cadastrarLivro(@Valid Livro livro, BindingResult result, Model model){
-    if (result.hasErrors()){
-        model.addAttribute("livro", livro);
-        model.addAttribute("categoriaLista", Arrays.asList(Categoria.values()));
+    @GetMapping("/cadastro")
+    public String cadastroLivro(Model model){
+        model.addAttribute("livro", new Livro());
         return "livroCadastro";
     }
-    if (livro.getId() == null){
+
+    @PostMapping("/cadastrar")
+    public String cadastrarLivro(@Valid Livro livro, BindingResult result, Model model){
+        if (result.hasErrors()){
+            model.addAttribute("livro", livro);
+            model.addAttribute("categoriaLista", Arrays.asList(Categoria.values()));
+            return "livroCadastro";
+        }
+        if(livro.getId() == null){
+            livroService.createLivro(livro);
+
+        }else{
+            livroService.updateLivro(livro);
+        }
         livroService.createLivro(livro);
-    } else {
-        livroService.updateLivro(livro);
-
+        return listarLivros(model);
+    }
+    @GetMapping("/cadastro/{id}")
+    public String cadastroLivro(@PathVariable Long id, Model model){
+        Livro livro = livroService.readLivro(id);
+        if(livro == null){
+            listarLivros(model);
+        }
+        model.addAttribute("livro", livro);
+        model.addAttribute("livro", new Livro());
+        return "livroCadastro";
     }
 
-    return listarLivros(model);
-}
-
-@GetMapping("/cadastro/{id}")
-public String cadastroLivro(@PathVariable Long id, Model model){
-    Livro livro = livroService.readLivro(id);
-    if (livro == null){
-        listarLivros(model);
-    }
-    model.addAttribute("livro", livro);
-    model.addAttribute("categoriaLista", Arrays.asList(Categoria.values()));
-
-    return "livroCadastro";
+    @GetMapping("deletar/{id}")
+    public String deletarLivro(@PathVariable Long id, Model model){
+        livroService.deleteLivro(id);
+        return listarLivros(model);
     }
 
-@GetMapping("/deletar/{id}")
-    public String deletarLivro(@PathVariable Long id, Model model) {
-    livroService.deleteLivro(id);
-    return listarLivros(model);
-    }
 }
